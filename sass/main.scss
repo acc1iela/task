@@ -1,0 +1,31 @@
+/* header*/
+.p-header {
+  border-bottom: 1px solid #dadada;
+  background-color: #fff;
+  width: 100%;
+  padding: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 51px;
+  width: 100%;
+
+  &__logo {
+    flex: 0 1 auto;
+    max-width: 267px;
+    padding: 0 12px;
+    margin-bottom: 5px;
+  }
+
+  &__logo-img {
+    width: 160px;
+  }
+
+  &__menu-icon {
+    border-left: 1px solid #dadada;
+    background: url(https://findpro.jp/assets/icon/icon-header-memu-a0c66f0ee740bb819234f34642beab1fbb41a6830becd461ce56febc993e0f40.svg) 12px 0 no-repeat;
+    background-size: contain;
+    width: 49px;
+    height: 27px;
+  }
+}
