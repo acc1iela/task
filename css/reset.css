@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* Remove default padding */
 /* デフォルトのpaddingを削除 */
 ul[class],
@@ -63,7 +70,7 @@ img {
 
 /* Natural flow and rhythm in articles by default */
 /* article要素内の要素に自然な流れとリズムを定義 */
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 

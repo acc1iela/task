@@ -1,4 +1,13 @@
-/* header*/
+/*-----------------------------------
+layout
+-----------------------------------*/
+.u-container {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+/*-----------------------------------
+header
+-----------------------------------*/
 .p-header {
   border-bottom: 1px solid #dadada;
   background-color: #fff;
@@ -22,3 +31,21 @@
     background-size: contain;
     width: 49px;
     height: 27px; }
+
+.p-navBar {
+  font-size: 12px; }
+  .p-navBar ul {
+    display: flex;
+    justify-content: space-evenly;
+    background: #eee; }
+  .p-navBar li {
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px; }
+  .p-navBar li + li {
+    border-left: 1px solid #333; }
+
+.c-breadcrumb {
+  background: #ddd;
+  height: 45px;
+  padding: 10px; }
