@@ -44,6 +44,8 @@ header
     padding: 5px; }
   .p-navBar li + li {
     border-left: 1px solid #333; }
+  .p-navBar img {
+    display: inline-block; }
 
 .c-breadcrumb {
   background: #ddd;
