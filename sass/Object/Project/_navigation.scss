@@ -1,0 +1,28 @@
+.p-navBar {
+  font-size: 12px;
+
+  & a {
+    text-decoration: none;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-evenly;
+    background: #eee;
+    border-bottom: 1px solid #333;
+  }
+
+  & li {
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px;
+  }
+
+  & li + li {
+    border-left: 1px solid #333;
+  }
+
+  & img {
+    display: inline-block;
+  }
+}

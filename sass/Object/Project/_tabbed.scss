@@ -1,0 +1,42 @@
+.p-tabbedPanel {
+  &__header {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    padding: 0 12px;
+
+    & > li {
+      flex-basis: 100%;
+    }
+
+    & > li:first-child {
+      margin-right: 6px;
+    }
+
+    &Item {
+      width: 100%;
+      padding: 10px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 3px 3px 0 0;
+      font-weight: 700;
+      background-color: #f8f8f8;
+      color: #9e9e9e;
+      outline: 0;
+      cursor: pointer;
+
+      &.is-active {
+        border-top: 2px solid #ccc;
+        border-bottom: none;
+        background-color: #fff;
+        color: #333;
+        cursor: auto;
+      }
+    }
+  }
+  &__body {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+  }
+}

@@ -13,47 +13,49 @@
       <h1 class="p-header__logo">
         <img
           src="https://findpro.jp/assets/common/logo-eb7399ee97ce1a21d621615d40f91d9e75eb6ab0df382f18761044bc77012a89.svg"
-          alt="cat logo" class="p-header__logo-img">
+          alt="cat logo" class="p-header__logoImg">
       </h1>
     </a>
     <a href="#">
-      <div class="p-header__menu-icon">
+      <div class="p-header__menuIcon">
       </div>
     </a>
   </header>
   <main>
     <div class="p-navBar">
-      <ul>
-        <li>
-          <a href="#">
-            <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
-            <p>カテゴリ</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
-            <p>カテゴリ</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
-            <p>カテゴリ</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
-            <p>カテゴリ</p>
-          </a>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
+              <p>カテゴリ</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
+              <p>カテゴリ</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
+              <p>カテゴリ</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
+              <p>カテゴリ</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="c-breadcrumb">
-      <p class="u-text--small">ウチの猫の名前はかんた。</p>
-    </div>
-    <div class="p-mainvisual__img u-margin-bottom--large">
+    <ol class="c-breadcrumb">
+      <li class="u-text--small">ウチの猫の名前はかんた。</li>
+    </ol>
+    <div class="p-mainVisual u-margin-bottom--large">
       <img src="img/mainVisual.png" alt="メインビジュアル">
     </div>
     <div class="p-tabbedPanel u-container">
@@ -78,7 +80,7 @@
             <label><input type="checkbox" name="category" value="4" id="category4">カテゴリ4</label>
           </div>
           <a href="#">
-            <p class="c-anchor--text u-text--small u-margin-bottom--small">もっと詳しく</p>
+            <p class="c-anchor--text u-text--small u-margin-bottom--small u-text--alignRight">もっと詳しく</p>
           </a>
           <div class="c-search u-margin-bottom--medium">
             <input type="search" name="search" placeholder="検索フォーム">
@@ -91,7 +93,7 @@
           <div class="p-entryForm">
             <div class="p-entryForm__body">
               <div class="p-entryForm__row">
-                <div class="p-entryForm__label is-required is-required">お名前 (カナ) </div>
+                <div class="p-entryForm__label is-required">お名前 (カナ) </div>
                 <input type="text" placeholder="例）セイ" name="lastname" value=""
                   class="p-entryForm__input p-entryForm__input--lastName is-required" aria-required="true"
                   aria-invalid="true">
@@ -100,7 +102,7 @@
                   aria-invalid="true">
               </div>
               <div class="p-entryForm__row">
-                <div class="p-entryForm__label is-required is-required">電話番号
+                <div class="p-entryForm__label is-required">電話番号
                 </div> <input type="tel" placeholder="09001230123" name="tel" value=""
                   class="p-entryForm__input p-entryForm__input--tel is-required" aria-required="true"
                   aria-invalid="true">
