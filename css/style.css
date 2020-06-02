@@ -175,7 +175,8 @@ select {
 .p-navBar {
   font-size: 12px; }
   .p-navBar a {
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block; }
   .p-navBar ul {
     display: flex;
     justify-content: space-evenly;
@@ -184,7 +185,9 @@ select {
   .p-navBar li {
     flex-grow: 1;
     text-align: center;
-    padding: 5px; }
+    padding: 5px;
+    position: relative;
+    z-index: 1; }
   .p-navBar li + li {
     border-left: 1px solid #333; }
   .p-navBar img {
