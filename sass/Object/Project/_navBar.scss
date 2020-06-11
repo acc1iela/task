@@ -1,0 +1,34 @@
+.p-navBar {
+  font-size: 12px;
+
+  & .p-navBar__list {
+    display: flex;
+    justify-content: space-evenly;
+    background: #eee;
+    border-bottom: 1px solid #333;
+
+    & li {
+      flex-grow: 1;
+      text-align: center;
+      padding: 5px 10px;
+      position: relative;
+
+      & .p-navBar__anchor::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  & li + li {
+    border-left: 1px solid #333;
+  }
+
+  & img {
+    display: inline-block;
+  }
+}
