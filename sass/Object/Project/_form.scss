@@ -1,67 +1,60 @@
 .p-entryForm {
 
-  &__input {
-    width: 100%;
-    padding: 10px 8px;
-    background: #fff;
-    border: 1px solid #51575d;
+  & .p-entryForm__label {
+    width: 130px;
     font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    position: relative;
+    vertical-align: middle;
+    line-height: 1.2;
+    padding: 10px 0 10px 10px;
+  }
 
-    &--lastName {
-      width: 30%;
-    }
+  & td {
+    font-size: 12px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 10px 3% 10px 0;
+    position: relative;
+  }
 
-    &--firstName {
-      width: 30%;
+  & .is-required {
+    display: inline-block;
+    width: 28px;
+    background-color: #fc3e3e;
+    color: #ffffff;
+    padding: 3px 0;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    font-weight: normal;
+    position: absolute;
+    left: -35px;
+    top: 18px;
+  }
+
+  &__input {
+    width: 48%;
+    margin-right: 2%;
+
+    &:last-child {
+      margin-right: 0;
     }
 
     &--tel {
-      width: 64%;
+      width: 100%;
     }
   }
 
-  &__body {
+  &__text {
     box-sizing: border-box;
-    background: #fff;
-    padding-top: 10px;
-  }
-
-  &__row {
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-
-  &__label {
-    box-sizing: border-box;
-    margin-bottom: 5px;
-    color: #333;
     font-size: 12px;
-    text-align: left;
-
-
-    &.is-required::after {
-      content: "\5FC5\9808";
-      background-color: #b92d00;
-    }
-
-    &::after {
-      content: "\4EFB\610F";
-      display: inline-block;
-      width: 25px;
-      margin-right: 2px;
-      padding: 2px 0;
-      background-color: #666;
-      color: #fff;
-      font-size: 10px;
-      font-weight: 400;
-      text-align: center;
-      vertical-align: 15%;
-      letter-spacing: .1em;
-      vertical-align:middle;
-    }
+    padding: 8px 4px;
+    border: 1px solid #c9c9c9;
+    border-radius: 0;
+    box-shadow: none;
   }
 }
