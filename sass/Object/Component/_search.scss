@@ -7,5 +7,9 @@
   font-size: 12px;
   display: flex;
   flex: 1;
+
+  & input {
+    width: 100%;
+  }
 }
 

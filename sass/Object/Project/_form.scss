@@ -1,6 +1,6 @@
 .p-entryForm {
 
-  & .p-entryForm__label {
+  &__label {
     width: 130px;
     font-size: 13px;
     font-weight: normal;
@@ -8,14 +8,14 @@
     position: relative;
     vertical-align: middle;
     line-height: 1.2;
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 15px 10px;
   }
 
   & td {
     font-size: 12px;
     text-align: left;
     vertical-align: middle;
-    padding: 10px 3% 10px 0;
+    padding: 10px 3% 15px 0;
     position: relative;
   }
 
@@ -37,7 +37,7 @@
   }
 
   &__input {
-    width: 48%;
+    width: 49%;
     margin-right: 2%;
 
     &:last-child {
@@ -57,4 +57,8 @@
     border-radius: 0;
     box-shadow: none;
   }
+
+  &__row {
+    border-bottom: 1px dotted #333;
+  } 
 }

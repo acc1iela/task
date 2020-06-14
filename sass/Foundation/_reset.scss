@@ -54,6 +54,10 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 /* Make images easier to work with */
 /* img要素の扱いを簡単にする */
 img {

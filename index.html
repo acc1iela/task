@@ -27,25 +27,25 @@
         <ul class="p-navBar__list">
           <li>
             <a href="#" class="p-navBar__anchor">
-              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
+              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン" class="p-navBar__img">
               <p>カテゴリ</p>
             </a>
           </li>
           <li>
             <a href="#" class="p-navBar__anchor">
-              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
+              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン" class="p-navBar__img">
               <p>カテゴリ</p>
             </a>
           </li>
           <li>
             <a href="#" class="p-navBar__anchor">
-              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
+              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン" class="p-navBar__img">
               <p>カテゴリ</p>
             </a>
           </li>
           <li>
             <a href="#" class="p-navBar__anchor">
-              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン">
+              <img src="img/free_star.svg" width="16px" height="16px" alt="星アイコン" class="p-navBar__img">
               <p>カテゴリ</p>
             </a>
           </li>
@@ -60,19 +60,19 @@
     </div>
     <div class="p-tabbedPanel u-container">
       <ul class="p-tabbedPanel__header">
-        <li>
-          <button type="button" class="p-tabbedPanel__headerItem is-active">
+        <li class="p-tabbedPanel__headerItem u-text--alignCenter js-tabbed is-active">
+          <button type="button">
             タブ1
           </button>
         </li>
-        <li>
-          <button type="button" class="p-tabbedPanel__headerItem">
+        <li class="p-tabbedPanel__headerItem u-text--alignCenter js-tabbed">
+          <button type="button">
             タブ2
           </button>
         </li>
       </ul>
       <div class="p-tabbedPanel__body">
-        <div class="p-tabbedPanel__contents">
+        <div class="p-tabbedPanel__contents is-show">
           <div class="c-checkbox u-margin-bottom--small">
             <label><input type="checkbox" name="category" value="1" id="category1">カテゴリ1</label>
             <label><input type="checkbox" name="category" value="2" id="category2">カテゴリ2</label>
@@ -92,7 +92,7 @@
         <div class="p-tabbedPanel__contents">
           <div class="p-entryForm">
             <div class="p-entryForm__body">
-              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="form-table">
+              <table width="100%" class="form-table u-margin-bottom--medium">
                 <tbody>
                   <tr class="p-entryForm__row">
                     <th class="p-entryForm__label">お名前（カナ）</th>
@@ -101,45 +101,26 @@
                       <input type="text" name="" placeholder="例）セイ" class="p-entryForm__input p-entryForm__text" value=""><input type="text" name="" placeholder="例）メイ" class="p-entryForm__input p-entryForm__text">
                     </td>
                   </tr>
-                  <tr>
+                  <tr class="p-entryForm__row">
                     <th class="p-entryForm__label">電話番号</th>
                     <td>
                       <span class="is-required">必須</span>
-                      <input id="tel1" type="tel" name="" placeholder="0120689791" class="p-entryForm__text" value="">
+                      <input id="tel1" type="tel" name="" placeholder="0120689791" class="p-entryForm__text u-size--full" value="">
                     </td>
                   </tr>
                 </tbody>
               </table>
+              <button class="c-btn">
+                必須項目を入力してください
+              </button>
             </div>
           </div>
         </div>
-        <!-- <div class="p-tabbedPanel__contents">
-          <div class="p-entryForm">
-            <div class="p-entryForm__body">
-              <div class="p-entryForm__row">
-                <div class="p-entryForm__label is-required">お名前 (カナ) </div>
-                <input type="text" placeholder="例）セイ" name="lastname" value=""
-                  class="p-entryForm__input p-entryForm__input--lastName is-required" aria-required="true"
-                  aria-invalid="true">
-                <input type="text" placeholder="例）メイ" name="firstname" value=""
-                  class="p-entryForm__input p-entryForm__input--firstName is-required" aria-required="true"
-                  aria-invalid="true">
-              </div>
-              <div class="p-entryForm__row">
-                <div class="p-entryForm__label is-required">電話番号
-                </div> <input type="tel" placeholder="09001230123" name="tel" value=""
-                  class="p-entryForm__input p-entryForm__input--tel is-required" aria-required="true"
-                  aria-invalid="true">
-              </div>
-              <div class="p-entryForm__row">
-                <p class="c-btn is-disable u-margin-bottom--small">必須項目を入力してください
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
