@@ -47,6 +47,10 @@
     &--tel {
       width: 100%;
     }
+
+    &--must {
+      background-color: rgb(255, 237, 237);
+    }
   }
 
   &__text {
@@ -60,5 +64,5 @@
 
   &__row {
     border-bottom: 1px dotted #333;
-  } 
+  }
 }
