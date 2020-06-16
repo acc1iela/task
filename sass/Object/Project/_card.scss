@@ -1,0 +1,36 @@
+.p-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  &__body {
+    margin-bottom: 10px;
+    width: 49%;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px #ccc;
+  }
+
+  &__img {
+    border-radius: 25px 25px 0 0;
+    height: auto;
+  }
+
+  &--content {
+    padding: 15px;
+  }
+
+  &__title {
+    font-size: 4.25vw;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+  }
+
+  &__text {
+    color: #777;
+    font-size: 3.5vw;
+    line-height: 1.2;
+  }
+}
