@@ -1,0 +1,10 @@
+.c-heading {
+  border-top: 4px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.2;
+
+  &__title {
+    font-size: 20px;
+    padding: 10px 5px;
+  }
+}
