@@ -10,4 +10,16 @@
   line-height: 1.2;
   text-shadow: 0.5px 0.87px 0 rgba(0, 0, 0, .16);
   text-align: center;
+
+  &--anchor {
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 4vw;
+    color: #000;
+    font-size: 5vw;
+    line-height: 1.2;
+    text-align: center;
+  }
 }

@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+  background-color: #eaeaea; }
+
 a {
   text-decoration: none;
   cursor: pointer; }
@@ -114,6 +117,16 @@ select {
   line-height: 1.2;
   text-shadow: 0.5px 0.87px 0 rgba(0, 0, 0, 0.16);
   text-align: center; }
+  .c-btn--anchor {
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 4vw;
+    color: #000;
+    font-size: 5vw;
+    line-height: 1.2;
+    text-align: center; }
 
 .c-checkbox {
   display: flex;
@@ -152,7 +165,8 @@ select {
   line-height: 1.2; }
   .c-heading__title {
     font-size: 20px;
-    padding: 10px 5px; }
+    padding: 10px 5px;
+    background: #fff; }
 
 .c-input {
   width: 49%;
@@ -178,7 +192,8 @@ select {
   box-sizing: border-box; }
   .p-ranking--content__inner {
     padding: 10px;
-    border-bottom: 1px solid #ddd; }
+    border-bottom: 1px solid #ddd;
+    background: #fff; }
   .p-ranking--content__ribbon {
     position: absolute;
     top: 0;
@@ -209,12 +224,13 @@ select {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px dotted #ddd; }
 
 .p-ranking--content--box {
   width: 50%;
   padding: 10px;
-  position: relative; }
+  position: relative;
+  background: #fff; }
   .p-ranking--content--box:first-child {
     border-right: 1px solid #ddd; }
 
@@ -254,7 +270,8 @@ select {
 .p-tabbedPanel__body {
   padding: 10px;
   border: 1px solid #ccc;
-  margin-top: -1px; }
+  margin-top: -1px;
+  background: #fff; }
 
 .p-navBar {
   font-size: 12px; }
@@ -343,17 +360,23 @@ select {
     font-size: 3.5vw;
     line-height: 1.2; }
 
-.u-margin-bottom--xsmall {
+.u-margin-bottom--xxsmall {
   margin-bottom: 5px !important; }
 
-.u-margin-bottom--small {
+.u-margin-bottom--xsmall {
   margin-bottom: 10px !important; }
 
-.u-margin-bottom--medium {
+.u-margin-bottom--small {
   margin-bottom: 15px !important; }
 
-.u-margin-bottom--large {
+.u-margin-bottom--medium {
   margin-bottom: 20px !important; }
+
+.u-margin-bottom--xlarge {
+  margin-bottom: 25px !important; }
+
+.u-margin-bottom--large {
+  margin-bottom: 30px !important; }
 
 .u-text--small {
   font-size: 12px; }
