@@ -1,0 +1,70 @@
+.p-accordion {
+  &--header {
+    font-size: 18px;
+    padding: 8px 6px;
+    background: #fff;
+    border-bottom: 1px solid #989898;
+    text-align: left;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      width: 15px;
+      height: 2px;
+      /*縦線に*/
+      transform: rotate(90deg);
+      background: #000;
+      transition: all .3s ease-in-out;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      /*横線*/
+      width: 15px;
+      height: 2px;
+      background: #000;
+      transition: all .2s ease-in-out;
+    }
+    &.open::before {
+      transform: rotate(180deg);
+    }
+    &.open::after {
+      opacity: 0;
+    }
+
+    // &::before,
+    // &::after {
+    //   content: "";
+    //   display: inline-block;
+    //   position: absolute;
+    //   top: 50%;
+    //   right: 12px;
+    //   width: 12px;
+    //   height: 2px;
+    //   background-color: #c9c9c9;
+    // }
+    // &::after {
+    //   top: 50%;
+    //   right: 12px;
+    //   transform: rotate(90deg);
+    //   transition: all .5s ease;
+    //   opacity: 1;
+    // }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid #333;
+    background: #fff;
+  }
+}
