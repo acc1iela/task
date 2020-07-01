@@ -1,6 +1,8 @@
 .c-input {
-  width: 49%;
-  margin-right: 2%;
+  &__inner {
+    width: 49%;
+    margin-right: 2%;
+  }
 
   &__text {
     box-sizing: border-box;
@@ -10,6 +12,7 @@
     border-radius: 0;
     box-shadow: none;
   }
+
   &:last-child {
       margin-right: 0;
     }
