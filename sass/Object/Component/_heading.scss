@@ -1,12 +1,15 @@
 .c-heading {
   border-top: 4px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #9e9e9e;
   line-height: 1.2;
 
-  &__title {
-    font-size: 20px;
+  &__inner {
     padding: 13px 5px;
     background: #fff;
     border-top: 4px solid #989898;
+  }
+
+  &__title {
+    font-size: 20px;
   }
 }

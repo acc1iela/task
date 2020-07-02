@@ -167,13 +167,14 @@ select {
 
 .c-heading {
   border-top: 4px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #9e9e9e;
   line-height: 1.2; }
-  .c-heading__title {
-    font-size: 20px;
+  .c-heading__inner {
     padding: 13px 5px;
     background: #fff;
     border-top: 4px solid #989898; }
+  .c-heading__title {
+    font-size: 20px; }
 
 .c-input__inner {
   width: 49%;
@@ -203,7 +204,7 @@ select {
   box-sizing: border-box; }
   .p-ranking--content__inner {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #9e9e9e;
     background: #fff; }
   .p-ranking--content__ribbon {
     position: absolute;
@@ -235,15 +236,15 @@ select {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: 1px dotted #ddd; }
+  border-bottom: 1px dotted #9e9e9e; }
 
-.p-ranking--content--box {
+.p-ranking--content__box {
   width: 50%;
   padding: 10px;
   position: relative;
   background: #fff; }
-  .p-ranking--content--box:first-child {
-    border-right: 1px solid #ddd; }
+  .p-ranking--content__box:first-child {
+    border-right: 1px solid #9e9e9e; }
 
 .p-tabbedPanel__header {
   display: flex;
@@ -305,6 +306,8 @@ select {
     left: 0;
     width: 100%;
     height: 100%; }
+  .p-navBar__anchor > p {
+    color: #000; }
   .p-navBar__img {
     display: inline-block; }
 
@@ -380,7 +383,7 @@ select {
 .p-media--feature__item {
   display: flex;
   background: #fff;
-  border-bottom: 1px dotted #333;
+  border-bottom: 1px dotted #9e9e9e;
   align-items: center; }
 
 .p-media--feature__textArea {
@@ -390,12 +393,13 @@ select {
 .p-media--articleList__item {
   display: flex;
   background: #fff;
-  border-bottom: 1px dotted #333;
+  border-bottom: 1px dotted #9e9e9e;
   align-items: center; }
 
 .p-media--articleList__img {
   flex: 1.5;
-  padding: 10px; }
+  padding: 10px;
+  line-height: 1; }
 
 .p-media--articleList__textArea {
   flex: 2;
@@ -403,7 +407,7 @@ select {
 
 .p-accordion--header {
   font-size: 18px;
-  padding: 8px 6px;
+  padding: 10px 8px;
   background: #fff;
   border-bottom: 1px solid #989898;
   text-align: left;
@@ -461,6 +465,8 @@ select {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
   .p-footer--link__item:not(:last-child) {
     border-right: 1px solid #989898; }
+  .p-footer--link__item > a {
+    color: #000; }
 
 .p-footer--copyright {
   background: #999;

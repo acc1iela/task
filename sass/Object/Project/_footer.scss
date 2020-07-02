@@ -16,6 +16,9 @@
       &:not(:last-child) {
         border-right: 1px solid #989898;
       }
+      & > a {
+        color: #000;
+      }
     }
   }
   &--copyright {
