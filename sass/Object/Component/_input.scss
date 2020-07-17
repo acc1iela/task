@@ -1,27 +1,8 @@
 .c-input {
-  &__inner {
-    width: 49%;
-    margin-right: 2%;
-  }
+  width: 49%;
+  margin-right: 2%;
 
-  &__text {
-    box-sizing: border-box;
-    font-size: 12px;
-    padding: 8px 4px;
-    border: 1px solid #c9c9c9;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  &:last-child {
-      margin-right: 0;
-    }
-
-  &--tel {
-    width: 100%;
-  }
-
-  &--required {
-    background-color: #ffeded;
+  &.is-required {
+    background-color: #ffeded !important;
   }
 }

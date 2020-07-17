@@ -13,7 +13,7 @@
       <h1 class='p-header__logo'>
         <img
           src='https://findpro.jp/assets/common/logo-eb7399ee97ce1a21d621615d40f91d9e75eb6ab0df382f18761044bc77012a89.svg'
-          alt='cat logo' class='u-size-full'>
+          alt='cat logo' class='u-size--full'>
       </h1>
     </a>
     <a href='#'>
@@ -27,13 +27,13 @@
         <ul class='p-navBar__list'>
           <li>
             <a href='#' class='p-navBar__anchor'>
-              <img src='img/free_star.svg' width='16px' height='16px' alt='星アイコン' class='p-navBar__img'>
+              <img src='img/free_star.svg' alt='星アイコン' class='p-navBar__img'>
               <p>カテゴリ</p>
             </a>
           </li>
           <li>
             <a href='#' class='p-navBar__anchor'>
-              <img src='img/free_star.svg' width='16px' height='16px' alt='星アイコン' class='p-navBar__img'>
+              <img src='img/free_star.svg' alt='星アイコン' class='p-navBar__img'>
               <p>カテゴリ</p>
             </a>
           </li>
@@ -71,7 +71,7 @@
           </button>
         </li>
       </ul>
-      <div class='p-tabbedPanel__body'>
+      <div class='p-tabbedPanel__body js-tabbed-body'>
         <div class='p-tabbedPanel__contents is-show'>
           <div class='c-checkbox u-margin-bottom--xsmall'>
             <label><input type='checkbox' name='category' value='1' id='category1'>カテゴリ1</label>
@@ -92,26 +92,23 @@
           </button>
         </div>
         <div class='p-tabbedPanel__contents'>
-          <div class='p-entryForm'>
+          <form class='p-entryForm'>
             <div class='p-entryForm__body'>
-              <table width='100%' class='form-table u-margin-bottom--small'>
+              <table width='100%' class='p-form__table u-margin-bottom--small'>
                 <tbody>
                   <tr class='p-entryForm__row'>
-                    <th class='p-entryForm__label'>お名前（カナ）</th>
+                    <th class='p-entryForm__label'>お名前（カナ）<span class='is-required'>必須</span></th>
                     <td>
-                      <span class='is-required'>必須</span>
                       <input type='text' name='' placeholder='例）セイ'
-                        class='c-input c-input__inner c-input__text c-input--required' value=''><input type='text'
-                        name='' placeholder='例）メイ' class='c-input c-input__inner c-input__text
-                        c-input--required'>
+                        class='c-input p-input__inner is-required' value=''><input type='text'
+                        name='' placeholder='例）メイ' class='c-input p-input__inner is-required'>
                     </td>
                   </tr>
                   <tr class='p-entryForm__row'>
-                    <th class='p-entryForm__label'>電話番号</th>
+                    <th class='p-entryForm__label'>電話番号<span class='is-required'>必須</span></th>
                     <td>
-                      <span class='is-required'>必須</span>
                       <input id='tel1' type='tel' name='' placeholder='0120689791'
-                        class='c-input c-input__text u-size--full c-input--required' value=''>
+                        class='c-input p-input__inner is-required p-input--tel' value=''>
                     </td>
                   </tr>
                 </tbody>
@@ -120,65 +117,65 @@
                 必須項目を入力してください
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
-    <div class='p-card u-margin-bottom--small'>
-      <div class='p-card__body'>
+    <div class='p-card p-card__group u-margin-bottom--small'>
+      <div class='p-card__inner'>
         <img src='img/card1.png' alt='猫ちゃん' class='u-size--full p-card__img'>
-        <div class='p-card--content'>
+        <div class='p-card__content'>
           <h1 class='p-card__title'><a href='#'>スコティッシュ<br>フォールド</a></h1>
           <p class='p-card__text'>その名の通り耳が特徴。可愛い</p>
         </div>
       </div>
-      <div class='p-card__body'>
+      <div class='p-card__inner'>
         <img src='img/card2.png' alt='猫ちゃん' class='u-size--full p-card__img'>
-        <div class='p-card--content'>
+        <div class='p-card__content'>
           <h1 class='p-card__title'><a href='#'>メインクーン</a></h1>
           <p class='p-card__text'>胴長で、まるでヤマネコのように体の大きい猫。可愛い</p>
         </div>
       </div>
-      <div class='p-card__body'>
+      <div class='p-card__inner'>
         <img src='img/card3.png' alt='猫ちゃん' class='u-size--full p-card__img'>
-        <div class='p-card--content'>
+        <div class='p-card__content'>
           <h1 class='p-card__title'><a href='#'>ブリティッシュ<br>ショートヘア</a></h1>
           <p class='p-card__text'>Youtubeでよく見る。可愛い</p>
         </div>
       </div>
-      <div class='p-card__body'>
+      <div class='p-card__inner'>
         <img src='img/card4.png' alt='猫ちゃん' class='u-size--full p-card__img'>
-        <div class='p-card--content'>
+        <div class='p-card__content'>
           <h1 class='p-card__title'><a href='#'>ペルシャ</a></h1>
           <p class='p-card__text'>高級感をひしひしと感じる、お上品な猫。可愛い</p>
         </div>
       </div>
     </div>
     <section class='p-ranking'>
-      <div class='c-heading c-heading__inner'>
+      <div class='c-heading'>
         <h2 class='c-heading__title u-text--alignCenter u-margin-bottom--xxsmall'>
           ランキングコンテンツ
         </h2>
         <p class='u-text--small u-text--alignCenter'>2020年9月15日</p>
       </div>
-      <div class='p-ranking--content'>
-        <div class='p-ranking--content__inner'>
-          <div class='p-ranking--content__ribbon'>
+      <div class='p-ranking__inner'>
+        <div class='p-ranking__item'>
+          <div class='p-ranking__item--ribbon'>
             <span class='p-ranking__ribbon'>1位</span>
           </div>
           <img src='img/ranking_cat.jpg' alt='猫ちゃん' class='u-size--full'>
           <p class='p-ranking__text'>人気ランキング1位の猫ちゃん</p>
         </div>
-        <div class='p-ranking--layout__half'>
-          <div class='p-ranking--content__box'>
-            <div class='p-ranking--content__ribbon'>
+        <div class='p-ranking__layout--half'>
+          <div class='p-ranking__inner--box'>
+            <div class='p-ranking__item--ribbon'>
               <span class='p-ranking__ribbon'>2位</span>
             </div>
             <img src='img/ranking_cat2.jpg' alt='猫ちゃん' class='u-size--full'>
             <p class='p-ranking__text'>人気ランキング2位の猫ちゃん</p>
           </div>
-          <div class='p-ranking--content__box'>
-            <div class='p-ranking--content__ribbon'>
+          <div class='p-ranking__inner--box'>
+            <div class='p-ranking__item--ribbon'>
               <span class='p-ranking__ribbon'>3位</span>
             </div>
             <img src='img/ranking_cat3.jpg' alt='猫ちゃん' class='u-size--full'>
@@ -189,37 +186,37 @@
       </div>
     </section>
     <section class='p-media'>
-      <div class='c-heading c-heading__inner'>
+      <div class='c-heading'>
         <h2 class='c-heading__title u-text--alignCenter'>
           特集
         </h2>
       </div>
       <div class='p-media--feature'>
-        <div class='p-media--feature__item'>
-          <div class='p-media--feature__img'>
+        <div class='p-media__item--feature'>
+          <div class='p-media__img--feature'>
             <img src='img/media.png' alt='特集記事サムネイル' class='u-size--full'>
           </div>
-          <div class='p-media--feature__textArea'>
+          <div class='p-media__body--content'>
             <p><span class='u-headLine--small'>見出し</span><span class='u-text--small'>テキスト</span></p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, accusantium?</p>
             <p><span class='u-text--small'>テキスト</span></p>
           </div>
         </div>
-        <div class='p-media--feature__item'>
-          <div class='p-media--feature__img'>
+        <div class='p-media__item--feature'>
+          <div class='p-media__img--feature'>
             <img src='img/media.png' alt='特集記事サムネイル' class='u-size--full'>
           </div>
-          <div class='p-media--feature__textArea'>
+          <div class='p-media__body--content'>
             <p><span class='u-headLine--small'>見出し</span><span class='u-text--small'>テキスト</span></p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. accusantium?</p>
             <p><span class='u-text--small'>テキスト</span></p>
           </div>
         </div>
-        <div class='p-media--feature__item'>
-          <div class='p-media--feature__img'>
+        <div class='p-media__item--feature'>
+          <div class='p-media__img--feature'>
             <img src='img/media.png' alt='特集記事サムネイル' class='u-size--full'>
           </div>
-          <div class='p-media--feature__textArea'>
+          <div class='p-media__body--content'>
             <p><span class='u-headLine--small'>見出し</span><span class='u-text--small'>テキスト</span></p>
             <p>Lorem ipsum dolor sit, amet consectetur elit. Ipsa, accusantium?</p>
             <p><span class='u-text--small'>テキスト</span></p>
@@ -227,7 +224,7 @@
         </div>
       </div>
       <span class='c-btn--anchor u-margin-bottom--large'>もっと見る</span>
-      <div class='c-heading c-heading__inner'>
+      <div class='c-heading'>
         <h2 class='c-heading__title u-text--alignCenter'>
           記事リスト
         </h2>
@@ -237,7 +234,7 @@
           <div class='p-media--articleList__img'>
             <img src='img/articleList.png' alt='記事画像' class='u-size--full'>
           </div>
-          <div class='p-media--articleList__textArea'>
+          <div class='p-media__body--articleList'>
             <p>タイトル</p>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
@@ -246,7 +243,7 @@
           <div class='p-media--articleList__img'>
             <img src='img/articleList.png' alt='記事画像' class='u-size--full'>
           </div>
-          <div class='p-media--articleList__textArea'>
+          <div class='p-media__body--articleList'>
             <p>タイトル</p>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
@@ -255,7 +252,7 @@
           <div class='p-media--articleList__img'>
             <img src='img/articleList.png' alt='記事画像' class='u-size--full'>
           </div>
-          <div class='p-media--articleList__textArea'>
+          <div class='p-media__body--articleList'>
             <p>タイトル</p>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
@@ -264,7 +261,7 @@
       <span class='c-btn--anchor u-margin-bottom--large'>もっと見る</span>
     </section>
     <div class='p-category'>
-      <div class='c-heading c-heading__inner'>
+      <div class='c-heading'>
         <h2 class='c-heading__title u-text--alignCenter'>
           カテゴリリスト
         </h2>
@@ -377,13 +374,13 @@
         </div>
       </section>
     </div>
-    <div class='p-footer--link'>
+    <footer class='p-footer--link'>
       <div class='p-footer--link__inner'>
         <p class='p-footer--link__item u-text--small'><a href='#'>フッターリンク1</a></p>
         <p class='p-footer--link__item u-text--small'><a href='#'>フッターリンク2</a></p>
         <p class='p-footer--link__item u-text--small'><a href='#'>フッターリンク3</a></p>
       </div>
-    </div>
+    </footer>
     <div class='p-footer--copyright'>
       <p class='u-text--small u-text--alignCenter'>Copyright&copy;Catsite</p>
     </div>

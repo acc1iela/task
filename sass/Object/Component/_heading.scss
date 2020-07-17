@@ -1,13 +1,9 @@
 .c-heading {
-  border-top: 4px solid #ddd;
+  border-top: 4px solid #989898;
   border-bottom: 1px solid #9e9e9e;
   line-height: 1.2;
-
-  &__inner {
-    padding: 13px 5px;
-    background: #fff;
-    border-top: 4px solid #989898;
-  }
+  padding: 13px 5px;
+  background: #fff;
 
   &__title {
     font-size: 20px;

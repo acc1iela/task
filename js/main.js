@@ -1,16 +1,17 @@
 $(function () {
   // タブ切り替え
-  $('.js-tabbed').click(function () {
-    $('.is-active').removeClass('is-active');
+  $('.js-tabbed').on('click', function () {
+    $(this).siblings().removeClass('is-active');
     $(this).addClass('is-active');
-    $('.is-show').removeClass('is-show');
+    $('.js-tabbed-body').find('.is-show').removeClass('is-show');
     const index = $(this).index();
-    $('.p-tabbedPanel__contents').eq(index).addClass('is-show');
+    //    $('.p-tabbedPanel__contents').eq(index).addClass('is-show');
+    $('.js-tabbed-body > div').eq(index).addClass('is-show');
   });
   // アコーディオン
   $('.p-accordion__inner:not(:first)').css('display', 'none');
-  $('.js-toggle').click(function () {
-    $('.js-toggle').not(this).removeClass('open').next().slideUp();
+  $('.js-toggle').on('click', function () {
+    $(this).not(this).removeClass('open').next().slideUp();
     $(this).toggleClass('open').next().slideToggle();
   });
 });
