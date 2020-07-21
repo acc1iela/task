@@ -1,0 +1,28 @@
+.c-media {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    border-bottom: 1px dotted #9e9e9e;
+  }
+
+  &__img {
+    padding: 10px;
+    line-height: 0;
+    flex: 1;
+    display: inline-block;
+  }
+
+  &__body {
+    flex: 2;
+    padding: 10px;
+  }
+
+  &--article {
+    &__img {
+      flex: 1.5;
+      padding: 10px;
+      line-height: 1;
+    }
+  }
+}
