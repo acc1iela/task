@@ -54,11 +54,12 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
-/* img要素の扱いを簡単にする */
-img {
-  max-width: 100%;
-  display: block;
+table {
+  border-collapse: collapse;
+}
+
+a {
+  color: #06c;
 }
 
 /* Natural flow and rhythm in articles by default */

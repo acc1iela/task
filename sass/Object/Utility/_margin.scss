@@ -1,15 +1,25 @@
-.u-margin-bottom--xsmall {
-  margin-bottom: 5px !important;
-}
+.u-margin-bottom {
+  &--xxsmall {
+    margin-bottom: 5px !important;
+  }
 
-.u-margin-bottom--small {
-  margin-bottom: 10px !important;
-}
+  &--xsmall {
+    margin-bottom: 10px !important;
+  }
 
-.u-margin-bottom--medium {
-  margin-bottom: 15px !important;
-}
+  &--small {
+    margin-bottom: 15px !important;
+  }
 
-.u-margin-bottom--large {
-  margin-bottom: 20px !important;
+  &--medium {
+    margin-bottom: 20px !important;
+  }
+
+  &--xlarge {
+    margin-bottom: 25px !important;
+  }
+
+  &--large {
+    margin-bottom: 30px !important;
+  }
 }

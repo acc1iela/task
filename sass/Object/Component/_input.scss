@@ -1,0 +1,8 @@
+.c-input {
+  width: 49%;
+  margin-right: 2%;
+
+  &.is-required {
+    background-color: #ffeded !important;
+  }
+}
