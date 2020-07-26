@@ -60,19 +60,19 @@
     </div>
     <div class='p-tabbedPanel u-container u-margin-bottom--large'>
       <ul class='p-tabbedPanel__header'>
-        <li class='p-tabbedPanel__headerItem u-text--alignCenter js-tabbed is-active'>
+        <li class='p-tabbedPanel__headerItem u-text--alignCenter is-active' data-tab-switch='tab1'>
           <button type='button'>
             タブ1
           </button>
         </li>
-        <li class='p-tabbedPanel__headerItem u-text--alignCenter js-tabbed'>
+        <li class='p-tabbedPanel__headerItem u-text--alignCenter' data-tab-switch='tab2'>
           <button type='button'>
             タブ2
           </button>
         </li>
       </ul>
-      <div class='p-tabbedPanel__body js-tabbed-body'>
-        <div class='p-tabbedPanel__contents is-show'>
+      <div class='p-tabbedPanel__body'>
+        <div class='p-tabbedPanel__contents is-show' data-tab-content='tab1'>
           <div class='c-checkbox u-margin-bottom--xsmall'>
             <label><input type='checkbox' name='category' value='1' id='category1'>カテゴリ1</label>
             <label><input type='checkbox' name='category' value='2' id='category2'>カテゴリ2</label>
@@ -91,7 +91,7 @@
             検索する
           </button>
         </div>
-        <div class='p-tabbedPanel__contents'>
+        <div class='p-tabbedPanel__contents' data-tab-content='tab2'>
           <form class='p-entryForm'>
             <div class='p-entryForm__body'>
               <table width='100%' class='p-form__table u-margin-bottom--small'>
@@ -191,16 +191,6 @@
       </h2>
     </div>
     <ul>
-      <li class='c-media'>
-        <div class='c-media__img'>
-          <img src='img/media.png' alt='特集記事サムネイル' class='u-size--full'>
-        </div>
-        <div class='c-media__body'>
-          <p><span class='u-headLine--small'>見出し</span><span class='u-text--small'>テキスト</span></p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, accusantium?</p>
-          <p><span class='u-text--small'>テキスト</span></p>
-        </div>
-      </li>
       <li class='c-media'>
         <div class='c-media__img'>
           <img src='img/media.png' alt='特集記事サムネイル' class='u-size--full'>

@@ -1,17 +1,16 @@
 $(function () {
-  // タブ切り替え
-  $('.js-tabbed').on('click', function () {
+  $('[data-tab-switch]').on('click', function () {
     $(this).siblings().removeClass('is-active');
     $(this).addClass('is-active');
-    $('.js-tabbed-body').find('.is-show').removeClass('is-show');
-    const index = $(this).index();
-    //    $('.p-tabbedPanel__contents').eq(index).addClass('is-show');
-    $('.js-tabbed-body > div').eq(index).addClass('is-show');
+    var tabTarget = $(this).data('tab-switch');
+    var $tabTargetElement = $(`[data-tab-content=${tabTarget}]`);
+    $tabTargetElement.siblings().removeClass('is-show');
+    $tabTargetElement.addClass('is-show');
   });
-  // アコーディオン
-  $('.p-accordion__inner:not(:first)').css('display', 'none');
+  $('.p-accordion__inner:not(:first)').hide();
   $('.js-toggle').on('click', function () {
-    $(this).not(this).removeClass('open').next().slideUp();
+    var index = $('.js-toggle').index(this);
+    $(this).not(this).removeClass('open').eq(index).slideUp();
     $(this).toggleClass('open').next().slideToggle();
   });
 });
