@@ -7,7 +7,7 @@ $(function () {
     $tabTargetElement.siblings().removeClass('is-show');
     $tabTargetElement.addClass('is-show');
   });
-  $('.p-accordion__inner:not(:first)').hide();
+  $('.p-accordion__body:not(:first)').hide();
   $('.js-toggle').on('click', function () {
     var $toggle = $(this);
     var $target = $toggle.next('.js-toggle-target');

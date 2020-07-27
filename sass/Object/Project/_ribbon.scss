@@ -1,0 +1,26 @@
+.p-ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 89px;
+  height: 91px;
+  overflow: hidden;
+
+  &__inner {
+    display: inline-block;
+    position: absolute;
+    padding: 7px 0;
+    right: -23px;
+    top: 22px;
+    width: 160px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    background: #322a28;
+    color: #fff;
+    letter-spacing: 0.05em;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+}

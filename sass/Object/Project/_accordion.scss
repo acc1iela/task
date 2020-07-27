@@ -1,5 +1,5 @@
 .p-accordion {
-  &--header {
+  &__header {
     font-size: 18px;
     padding: 10px 8px;
     background: #fff;
@@ -32,7 +32,7 @@
     }
   }
 
-  &__inner {
+  &__body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

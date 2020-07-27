@@ -1,4 +1,4 @@
-.p-footerLink {
+.p-footer {
   &__inner {
     display: flex;
     align-items: center;
@@ -25,5 +25,6 @@
     background: #999;
     padding: 20px 10px;
     color: #fff;
+    letter-spacing: .05rem;
   }
 }
