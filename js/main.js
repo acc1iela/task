@@ -9,8 +9,9 @@ $(function () {
   });
   $('.p-accordion__inner:not(:first)').hide();
   $('.js-toggle').on('click', function () {
-    var index = $('.js-toggle').index(this);
-    $(this).not(this).removeClass('open').eq(index).slideUp();
-    $(this).toggleClass('open').next().slideToggle();
+    var $toggle = $(this);
+    var $target = $toggle.next('.js-toggle-target');
+    $toggle.toggleClass('open');
+    $target.slideToggle();
   });
 });
