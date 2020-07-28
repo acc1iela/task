@@ -3,12 +3,12 @@
   height: 38px;
   background: #f8f8f8;
   border-radius: 5px;
-  padding-left: 5px;
-  font-size: 12px;
   display: flex;
   flex: 1;
 
-  & input {
+  &__text {
+    font-size: 12px;
+    padding-left: 5px;
     width: 100%;
   }
 }

@@ -85,7 +85,7 @@
             </a>
           </p>
           <div class='c-search u-margin-bottom--small'>
-            <input type='search' name='search' placeholder='検索フォーム'>
+            <input type='search' name='search' placeholder='検索フォーム' class='c-search__text'>
           </div>
           <button class='c-btn'>
             検索する
@@ -94,21 +94,22 @@
         <div class='p-tabbedPanel__contents' data-tab-content='tab2'>
           <form class='p-entryForm'>
             <div class='p-entryForm__body'>
-              <table width='100%' class='p-form__table u-margin-bottom--small'>
+              <table class='p-form__table u-margin-bottom--small'>
                 <tbody>
                   <tr class='p-entryForm__row'>
                     <th class='p-entryForm__label'>お名前（カナ）<span class='is-required'>必須</span></th>
                     <td>
-                      <input type='text' name='' placeholder='例）セイ'
-                        class='c-input p-input__inner is-required' value=''><input type='text'
-                        name='' placeholder='例）メイ' class='c-input p-input__inner is-required'>
+                      <input type='text' name='request[last_name]' placeholder='例）セイ'
+                        class='c-input p-input__half is-required' value=''><input type='text'
+                        name='request[first_name]' placeholder='例）メイ' class='c-input p-input__half
+                        is-required' value=''>
                     </td>
                   </tr>
                   <tr class='p-entryForm__row'>
                     <th class='p-entryForm__label'>電話番号<span class='is-required'>必須</span></th>
                     <td>
-                      <input id='tel1' type='tel' name='' placeholder='0120689791'
-                        class='c-input p-input__inner is-required p-input--tel' value=''>
+                      <input id='tel1' type='tel' name='request[whole_tel_no]' placeholder='0120689791'
+                        class='c-input is-required' value=''>
                     </td>
                   </tr>
                 </tbody>
@@ -121,32 +122,42 @@
         </div>
       </div>
     </div>
-    <div class='p-card p-card__group u-margin-bottom--small'>
-      <div class='p-card__inner'>
-        <img src='img/card1.png' alt='猫ちゃん' class='u-size--full p-card__img'>
-        <div class='p-card__content'>
-          <h1 class='p-card__title'><a href='#'>スコティッシュ<br>フォールド</a></h1>
+    <div class='p-card__group u-margin-bottom--small'>
+      <div class='p-card'>
+        <div class='p-card__header'>
+          <img src='img/card1.png' alt='猫ちゃん' class='u-size--full p-card__img'>
+        </div>
+        <div class='p-card__body'>
+          <h1 class='p-card__title'><a
+              href='https://bit.ly/2P0cE1W' target='_brank'>スコティッシュ<br>フォールド</a>
+          </h1>
           <p class='p-card__text'>その名の通り耳が特徴。可愛い</p>
         </div>
       </div>
-      <div class='p-card__inner'>
-        <img src='img/card2.png' alt='猫ちゃん' class='u-size--full p-card__img'>
-        <div class='p-card__content'>
-          <h1 class='p-card__title'><a href='#'>メインクーン</a></h1>
+      <div class='p-card'>
+        <div class='p-card__header'>
+          <img src='img/card2.png' alt='猫ちゃん' class='u-size--full p-card__img'>
+        </div>
+        <div class='p-card__body'>
+          <h1 class='p-card__title'><a href='https://bit.ly/2X4sVr6' target='_brank'>メインクーン</a></h1>
           <p class='p-card__text'>胴長で、まるでヤマネコのように体の大きい猫。可愛い</p>
         </div>
       </div>
-      <div class='p-card__inner'>
-        <img src='img/card3.png' alt='猫ちゃん' class='u-size--full p-card__img'>
-        <div class='p-card__content'>
-          <h1 class='p-card__title'><a href='#'>ブリティッシュ<br>ショートヘア</a></h1>
+      <div class='p-card'>
+        <div class='p-card__header'>
+          <img src='img/card3.png' alt='猫ちゃん' class='u-size--full p-card__img'>
+        </div>
+        <div class='p-card__body'>
+          <h1 class='p-card__title'><a href='https://bit.ly/3jN9tsG' target='_brank'>ブリティッシュ<br>ショートヘア</a></h1>
           <p class='p-card__text'>Youtubeでよく見る。可愛い</p>
         </div>
       </div>
-      <div class='p-card__inner'>
-        <img src='img/card4.png' alt='猫ちゃん' class='u-size--full p-card__img'>
-        <div class='p-card__content'>
-          <h1 class='p-card__title'><a href='#'>ペルシャ</a></h1>
+      <div class='p-card'>
+        <div class='p-card__header'>
+          <img src='img/card4.png' alt='猫ちゃん' class='u-size--full p-card__img'>
+        </div>
+        <div class='p-card__body'>
+          <h1 class='p-card__title'><a href='https://bit.ly/3hMQY5Y' target='_brank'>ペルシャ</a></h1>
           <p class='p-card__text'>高級感をひしひしと感じる、お上品な猫。可愛い</p>
         </div>
       </div>
@@ -219,7 +230,7 @@
     </div>
     <ul>
       <li class='c-media'>
-        <div class='c-media__article--img'>
+        <div class='c-media__img--article'>
           <img src='img/articleList.png' alt='記事画像' class='u-size--full'>
         </div>
         <div class='c-media__body'>
@@ -228,7 +239,7 @@
         </div>
       </li>
       <li class='c-media'>
-        <div class='c-media__article--img'>
+        <div class='c-media__img--article'>
           <img src='img/articleList.png' alt='記事画像' class='u-size--full'>
         </div>
         <div class='c-media__body'>
@@ -237,7 +248,7 @@
         </div>
       </li>
       <li class='c-media'>
-        <div class='c-media__article--img'>
+        <div class='c-media__img--article'>
           <img src='img/articleList.png' alt='記事画像' class='u-size--full'>
         </div>
         <div class='c-media__body'>
