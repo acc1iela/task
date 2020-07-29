@@ -88,6 +88,14 @@ button {
   -webkit-appearance: none;
 }
 
+// input searchのデフォルトスタイルを削除
+input[type='search'] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
 /* Remove all animations and transitions for people that prefer not to see them */
 /* 見たくない人用に、すべてのアニメーションとトランジションを削除 */
 @media (prefers-reduced-motion: reduce) {
