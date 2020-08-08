@@ -1,6 +1,11 @@
 .c-input {
-  width: 49%;
-  margin-right: 2%;
+  font-size: 12px;
+  padding: 8px 4px;
+  border: 1px solid #c9c9c9;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
 
   &.is-required {
     background-color: #ffeded !important;

@@ -1,4 +1,4 @@
-.p-footerLink {
+.p-footer {
   &__inner {
     display: flex;
     align-items: center;
@@ -16,14 +16,8 @@
       border-right: 1px solid #989898;
     }
 
-    &>a {
+    & > a {
       color: #000;
     }
-  }
-
-  &--copyright {
-    background: #999;
-    padding: 20px 10px;
-    color: #fff;
   }
 }

@@ -1,26 +1,17 @@
 .p-card {
-  padding: 0 10px;
+  margin-bottom: 10px;
+  width: 49%;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px #ccc;
 
-  &__group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  &__inner {
-    margin-bottom: 10px;
-    width: 49%;
-    background: #fff;
-    border-radius: 25px;
-    box-shadow: 0 2px 5px #ccc;
-  }
-
-  &__img {
+  &__header {
     border-radius: 25px 25px 0 0;
     height: auto;
+    overflow: hidden;
   }
 
-  &__content {
+  &__body {
     padding: 5px 12px 15px;
   }
 
